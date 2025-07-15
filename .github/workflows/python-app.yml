@@ -24,6 +24,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pandas
 
-    - name: Run tests
+    - name: Run tests (verbose)
       run: |
-        python -m unittest discover -s . -p 'test_*.py'
+        python -m unittest discover -s . -p 'test_*.py' -v
+
